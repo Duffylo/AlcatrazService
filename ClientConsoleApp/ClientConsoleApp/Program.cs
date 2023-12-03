@@ -6,7 +6,7 @@ using Grpc.Net.Client;
 Console.WriteLine("Hello, World!");
 
 // The port number must match the port of the gRPC server.
-using var channel = GrpcChannel.ForAddress("http://localhost:5036");
+using var channel = GrpcChannel.ForAddress("http://localhost:5000");
 var client = new TimeService.TimeServiceClient(channel);
 var reply = await client.GetTimeAsync(new Empty());
 Console.WriteLine("Time: " + reply.Message);
