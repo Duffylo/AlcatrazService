@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option csharp_namespace = "AlcatrazGrpcService";
+
+package timeservice;
+
+// The greeting service definition.
+service TimeService {
+  // Sends a greeting
+  rpc GetTime (google.protobuf.Empty) returns (TimeReply);
+}
+
+// The response message containing the time.
+message TimeReply {
+  string message = 1;
+}
