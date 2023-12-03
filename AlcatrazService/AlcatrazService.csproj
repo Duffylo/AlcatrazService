@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\time.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\time.proto" GrpcServices="Both" />
   </ItemGroup>
 
   <ItemGroup>
